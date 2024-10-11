@@ -46,11 +46,6 @@ const Footer = () => {
             className="text-gray-600 hover:text-gray-800 flex items-center"
           >
             USER AGREEMENT
-            <img
-              src="/external-link-icon.svg"
-              alt="External link icon"
-              className="ml-1 w-3 h-3"
-            />
           </a>
         </div>
       </div>

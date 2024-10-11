@@ -43,3 +43,18 @@ body {
   border-radius: 0.5rem;
   border: 3px solid #E1E4EA;
 }
+
+.mask-image1{
+  mask-image: url('/cards/card1.png');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: top;
+  background-color: rgba(62,62,62,0.55);
+}
+.mask-image2{
+  mask-image: url('/cards/card2.png');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: top;
+  background-color: rgba(62,62,62,0.55);
+}
