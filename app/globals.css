@@ -24,4 +24,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .title{
+    @apply md:text-7xl font-ndot text-4xl;
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1C1C1C;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E1E4EA;
+  border-radius: 0.5rem;
+  border: 3px solid #E1E4EA;
 }
