@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 
 const Tiltbutton = () => {
   return (
-    <Tilt>
+    <Tilt tiltAngleYInitial={15}>
       <button className=" bg-[#2A2A2A] p-4 px-6 font-ndot text-3xl relative z-10 rounded-lg flex items-center justify-center gap-3">
         {" "}
         join now <FaArrowRight />

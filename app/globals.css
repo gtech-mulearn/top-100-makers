@@ -58,3 +58,9 @@ body {
   mask-position: top;
   background-color: rgba(62,62,62,0.55);
 }
+.mask-acc{
+  mask-image: url('/acc_mask.webp');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: top;
+}
