@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import BlinkText from "./blinkText";
 
 const Accordion = ({ title, content }: { title: string; content: string }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +76,9 @@ const Qa = () => {
   return (
     <div className="p-8  bg-bg2">
       <div className="md:px-32 ">
-        <h1 className="title text-black ">Still Have Questions?</h1>
+        <BlinkText>
+          <h1 className="title text-black ">Still Have Questions?</h1>
+        </BlinkText>
         {
           // Accordion Component
           accordionData.map((data, index) => (

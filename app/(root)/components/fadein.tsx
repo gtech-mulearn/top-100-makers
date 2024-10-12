@@ -1,14 +1,13 @@
 "use client";
+import { ReactNode, useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import React, { ReactNode, useEffect, useRef } from "react";
-
-interface props {
+interface Props {
   children: ReactNode;
   width?: "fit-content" | "100%";
   delay?: number;
 }
 
-const BlinkText = ({ children, width = "fit-content" }: props) => {
+const FadeIn = ({ children, width = "100%", delay = 0 }: Props) => {
   const ref = useRef(null!);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -19,27 +18,34 @@ const BlinkText = ({ children, width = "fit-content" }: props) => {
   }, [isInView, controls]);
   return (
     <motion.div
-      ref={ref}
       style={{
-        position: "relative",
-        zIndex: 10,
-        width: width,
-        // overflow: "hidden",
-        // textAlign: "center",
+        width,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
+      ref={ref}
       variants={{
         hidden: {
           opacity: 0,
+          y: 100,
         },
         visible: {
-          opacity: [0, 1, 0, 1],
+          opacity: 1,
+          y: 0,
         },
       }}
+      initial="hidden"
       animate={controls}
+      transition={{
+        duration: 0.5,
+        delay: 0.1 + delay,
+        //   ease: "linear",
+      }}
     >
       {children}
     </motion.div>
   );
 };
 
-export default BlinkText;
+export default FadeIn;
