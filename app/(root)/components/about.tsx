@@ -14,17 +14,20 @@ const About = () => {
         Think you’ve got what it takes? Start by tackling our initial build
         challenges.
       </span>
-      <div className="flex ">
-        <div className="mask-image1 h-[250px] w-[400px] flex justify-center items-center relative translate-x-14">
+      <div className="flex mb-32">
+        <div className="mask-image1 cardsize flex justify-center items-center relative translate-x-24">
           <Image
-            src="/cards/attach1.png"
+            style={{
+              filter: `drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25))`,
+            }}
+            src="/cards/attach3.webp"
             alt="about1"
             width={50}
             height={50}
             draggable={false}
-            className="object-contain absolute top-0 left-0"
+            className="object-contain absolute top-5 left-5"
           ></Image>
-          <p className="text-lg font-nats w-[80%]">
+          <p className=" font-nats w-[80%]">
             Show off your skills in hardware, electronics, and physical
             computing.
           </p>
@@ -37,24 +40,30 @@ const About = () => {
             className="object-contain absolute bottom-0 left-0 -z-10"
           ></Image>
         </div>
-        <div className="mask-image1 h-[250px] max-w-[400px] flex justify-center items-center relative translate-y-40">
+        <div className="mask-image1 cardsize flex justify-center items-center relative translate-y-3/4">
           <Image
-            src="/cards/attach2.png"
+            style={{
+              filter: `drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25))`,
+            }}
+            src="/cards/attach2.webp"
             alt="about1"
             width={50}
             height={50}
             draggable={false}
-            className="object-contain absolute top-0 left-0"
+            className="object-contain absolute top-8 left-5"
           ></Image>
           <Image
-            src="/cards/attach3.png"
+            style={{
+              filter: `drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25))`,
+            }}
+            src="/cards/attach1.webp"
             alt="about1"
-            width={25}
-            height={25}
+            width={50}
+            height={50}
             draggable={false}
-            className="object-contain absolute top-10 right-2"
+            className="object-contain absolute top-12 right-4"
           ></Image>
-          <p className="text-lg font-nats w-[80%]">
+          <p className=" font-nats w-[80%]">
              Submit your project video and documentation to prove your ingenuity
             and technical flair.
           </p>
@@ -67,16 +76,16 @@ const About = () => {
             className="object-contain absolute bottom-0 left-0 -z-10"
           ></Image>
         </div>
-        <div className="mask-image2  h-[250px] max-w-[400px] flex justify-center items-center relative -translate-x-14">
+        <div className="mask-image2  cardsize flex justify-center items-center relative -z-10 -translate-x-24">
           <Image
-            src="/cards/attach4.png"
+            src="/cards/attach4.webp"
             alt="about1"
-            width={25}
-            height={25}
+            width={50}
+            height={50}
             draggable={false}
             className="object-contain absolute top-2 right-2"
           ></Image>
-          <p className="text-lg font-nats w-[80%]">
+          <p className=" font-nats w-[80%]">
             Then, dive into our epic Maker Challenges: the Hardware Hackathon,
             Sustainable Design Challenge, IoT Challenge, and 3D Printing &
             Prototyping.
@@ -91,7 +100,7 @@ const About = () => {
           ></Image>
         </div>
       </div>
-      <div className="w-full font-ndot text-4xl absolute bottom-4">
+      <div className="w-full font-ndot  absolute bottom-4">
         <BlinkText width="100%">
           Make it to the top, and you&apos;ll earn a spot among India&apos;s
           best makers!

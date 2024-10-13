@@ -14,7 +14,7 @@ const Selection = () => {
         <p className="mt-8 font-nats text-3xl">
           We’re looking for creators who excel in:
         </p>
-        <div className="flex justify-end items-center mt-32 mb-20 max-md:flex-col relative z-[1]">
+        <div className="flex justify-center items-center mt-32 mb-20 max-md:flex-col relative z-[1]">
           {/* make some card div with a title and description */}
           {Array(5)
             .fill(0)
@@ -22,19 +22,22 @@ const Selection = () => {
               <>
                 <Tilt tiltAngleYInitial={-30} className="relative z-10">
                   <div
+                    style={{
+                      filter: `drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25))`,
+                    }}
                     key={i}
-                    className="bg-gradient-to-tr from-[#2A2A2A] to-[rgb(34,40,52)] p-5 rounded-lg border border-[rgba(0,0,0,0.2)] max-w-[300px] flex flex-col items-center gap-8"
+                    className="bg-gradient-to-tr from-[#2A2A2A] to-[rgb(34,40,52)] p-5 rounded-lg border border-[rgba(0,0,0,0.2)] max-w-[300px] flex flex-col items-center gap-3"
                   >
                     <Image
                       src={`/abouticons/icon${i + 1}.webp`}
-                      width={50}
-                      height={50}
+                      width={100}
+                      height={100}
                       alt="innovation"
                     ></Image>
-                    <h1 className="font-ndot text-xl">
+                    <h1 className="font-ndot text-3xl mb-4">
                       Innovation and Creativity
                     </h1>
-                    <p className="pb-16">
+                    <p className="pb-16 text-2xl font-nats leading-none">
                        Can you think outside the box and bring fresh, unique
                       ideas to life?
                     </p>

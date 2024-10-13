@@ -27,6 +27,9 @@ body {
   .title{
     @apply md:text-7xl font-ndot text-4xl;
   }
+  .cardsize{
+    @apply xl:text-2xl 2xl:text-4xl text-lg h-[400px] w-[600px] max-2xl:h-[300px] max-2xl:w-[450px] max-xl:h-[250px] max-xl:w-[375px] max-lg:h-[200px] max-lg:w-[300px] max-md:h-[150px] max-md:w-[225px] max-sm:h-[100px] max-sm:w-[150px];
+  }
 }
 
 
