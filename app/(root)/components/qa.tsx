@@ -52,7 +52,7 @@ const Accordion = ({ title, content }: { title: string; content: string }) => {
             exit={{ y: -20, opacity: 0 }}
             className="p-4 pb-10 md:px-16 bg-[#E1E4EA] rounded-b-md md:rounded-b-lg"
           >
-            <p className="text-gray-700 md:text-xl">{content}</p>
+            <p className="text-[#000000] md:text-xl">{content}</p>
           </motion.div>
         )}
       </AnimatePresence>
