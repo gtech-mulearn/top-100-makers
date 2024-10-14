@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import BlinkText from "./blinkText";
+import Tiltbutton from "./tiltbutton";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center flex-col p-8 text-center gap-14 min-h-[150vh] relative">
+    <div className="flex justify-start items-center flex-col p-8 text-center gap-14 min-h-[140vh] relative">
       <BlinkText>
         <h1 className="title ">
           What’s in it for You? Prizes Worth <br /> ₹10,00,000!
@@ -100,11 +101,12 @@ const About = () => {
           ></Image>
         </div>
       </div>
-      <div className="w-full font-ndot  absolute bottom-4">
+      <div className="w-full font-ndot text-4xl absolute bottom-4 flex flex-col justify-center items-center gap-12 py-8">
         <BlinkText width="100%">
           Make it to the top, and you&apos;ll earn a spot among India&apos;s
           best makers!
         </BlinkText>
+        <Tiltbutton />
       </div>
     </div>
   );

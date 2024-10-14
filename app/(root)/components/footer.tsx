@@ -1,12 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaDiscord,
-  FaYoutube,
-  FaTimes,
-} from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebookF, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,7 +29,7 @@ const Footer = () => {
             <FaInstagram className="hover:text-gray-800" />
             <FaDiscord className="hover:text-gray-800" />
             <FaYoutube className="hover:text-gray-800" />
-            <FaTimes className="hover:text-gray-800" />
+            <BsTwitterX className="hover:text-gray-800" />
           </div>
         </div>
         <div className="flex items-center bg-bg4 h-1/2 justify-between p-8 md:px-12">

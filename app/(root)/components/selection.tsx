@@ -3,10 +3,11 @@ import React from "react";
 import BlinkText from "./blinkText";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
+import Tiltbutton from "./tiltbutton";
 
 const Selection = () => {
   return (
-    <div className=" text-center relative">
+    <div className=" text-center relative min-h-screen">
       <div className="bg-bg5 p-8">
         <BlinkText width="100%">
           <h1 className="title">How Do We Choose the Top Makers?</h1>
@@ -57,7 +58,10 @@ const Selection = () => {
             ))}
         </div>
       </div>
-      <div className="h-40 w-full bg-bg1 absolute bottom-0 "></div>
+      <div className="min-h-80 w-full bg-bg1 absolute bottom-0 flex flex-col justify-end pb-12 items-center gap-8">
+        <h1 className="text-4xl font-nats">Ready to Innovate?</h1>
+        <Tiltbutton />
+      </div>
     </div>
   );
 };

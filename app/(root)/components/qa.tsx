@@ -70,7 +70,7 @@ const Qa = () => {
     {
       title: "HOW DO I START ?",
       content:
-        "You can start by clicking the 'Join Now' button on the top right corner of the page. Fill in the required details and you're good to go!",
+        "To start with Top 100 Makers, sign up and join the µLearn Discord server. Connect your account, get your MUID, and build your portfolio in the /profile directory on GitHub. Submit a pull request to showcase your work, link your µLearn profile, and engage in the Discord channels.",
     },
   ];
   return (
