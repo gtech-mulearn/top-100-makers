@@ -15,7 +15,7 @@ const Selection = () => {
         <p className="mt-8 font-nats text-3xl">
           We’re looking for creators who excel in:
         </p>
-        <div className="flex justify-center items-center mt-32 mb-20 max-md:flex-col relative z-[1]">
+        <div className="flex justify-center items-center mt-32 mb-20 max-lg:flex-col relative z-[1]">
           {/* make some card div with a title and description */}
           {Array(5)
             .fill(0)
@@ -51,14 +51,14 @@ const Selection = () => {
                     width={50}
                     height={50}
                     draggable={false}
-                    className="max-md:rotate-90 scale-x-150"
+                    className="max-lg:hidden scale-x-150"
                   ></Image>
                 )}
               </>
             ))}
         </div>
       </div>
-      <div className="min-h-80 w-full bg-bg1 absolute bottom-0 flex flex-col justify-end pb-12 items-center gap-8">
+      <div className="min-h-80 w-full bg-bg1 lg:absolute bottom-0 flex flex-col justify-end pb-12 items-center gap-8">
         <h1 className="text-4xl font-nats">Ready to Innovate?</h1>
         <Tiltbutton />
       </div>

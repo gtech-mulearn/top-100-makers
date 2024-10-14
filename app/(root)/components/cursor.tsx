@@ -7,6 +7,7 @@ const Cursor = () => {
   const ref = useRef(null);
   useGSAP(
     () => {
+      if (window.innerWidth < 1026) return;
       window.addEventListener("mousemove", (e) => {
         const scrollX = window.scrollX;
         const scrollY = window.scrollY;

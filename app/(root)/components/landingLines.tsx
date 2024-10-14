@@ -8,7 +8,7 @@ const LandingLines = () => {
       height="100%"
       viewBox="0 0 1920 1183"
       fill="none"
-      className={`max-md:scale-150`}
+      className={`max-md:scale-150 `}
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>

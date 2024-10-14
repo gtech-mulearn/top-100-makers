@@ -6,7 +6,7 @@ import Fadein from "./fadein";
 
 const Landing = () => {
   return (
-    <div className="min-h-[100dvh] flex justify-center items-center flex-col text-center gap-8 relative overflow-hidden z-10">
+    <div className="min-h-[100dvh] justify-end max-md:pb-20 flex md:justify-center items-center flex-col text-center gap-8 relative overflow-hidden z-10">
       <BlinkText>
         <Image
           src="/thm_landing.webp"

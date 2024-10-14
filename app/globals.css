@@ -31,6 +31,9 @@ body {
   .cardsize{
     @apply xl:text-2xl 2xl:text-4xl text-lg h-[400px] w-[600px] max-2xl:h-[300px] max-2xl:w-[450px] max-xl:h-[250px] max-xl:w-[375px] max-lg:h-[200px] max-lg:w-[300px] max-md:h-[150px] max-md:w-[225px] max-sm:h-[100px] max-sm:w-[150px];
   }
+  .mobilecard{
+    @apply w-full h-[500px];
+  }
 }
 
 
@@ -67,4 +70,19 @@ body {
   mask-size: cover;
   mask-repeat: no-repeat;
   mask-position: top;
+}
+
+.m-mask2{
+  mask-image: url('/cards/m1.png');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: top;
+  background-color: rgba(62,62,62,0.55);
+}
+.m-mask3{
+  mask-image: url('/cards/m3.png');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+  background-color: rgba(62,62,62,0.55);
 }

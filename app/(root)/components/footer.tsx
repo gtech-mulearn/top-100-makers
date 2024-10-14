@@ -5,8 +5,8 @@ import { FaFacebookF, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap max-md:flex-col">
-      <div className="flex w-full  md:w-1/2">
+    <footer className="flex flex-wrap max-lg:flex-col">
+      <div className="flex w-full  lg:w-1/2">
         {[...Array(3)].map((_, index) => (
           <Image
             key={index}
@@ -19,7 +19,7 @@ const Footer = () => {
           />
         ))}
       </div>
-      <div className="md:flex-1 flex flex-col">
+      <div className="lg:flex-1 flex flex-col">
         <div className="flex flex-1 items-center justify-between  bg-bg2 text-xl p-8 md:px-12">
           <p className="text-[rgba(68,34,68,0.7333)] font-ndot text-xl md:text-3xl">
             SEE US ON
