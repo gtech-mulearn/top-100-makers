@@ -33,15 +33,12 @@ const Terms = () => {
 
         {/* Footer Link */}
         <div className="flex items-center">
-          <a
-            href="/privacy-policy"
-            className=" text-white font-ndot uppercase flex items-center"
-          >
+          <div className=" text-white font-ndot uppercase flex items-center">
             PRIVACY POLICY
             <span className="ml-2 border border-gray-800 p-1 text-xs">
               &#8594;
             </span>
-          </a>
+          </div>
         </div>
       </div>
     </div>

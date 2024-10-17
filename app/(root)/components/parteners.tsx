@@ -43,6 +43,17 @@ const Parteners = () => {
             draggable={false}
           />
         ))}
+        {[...Array(7)].map((_, index) => (
+          <Image
+            key={index}
+            src={`/parteners/partener${index + 1}.webp`}
+            alt="partener image"
+            className="md:w-[10vw] w-[25vw] h-auto mr-14"
+            width={100}
+            height={100}
+            draggable={false}
+          />
+        ))}
       </Marquee>
     </div>
   );

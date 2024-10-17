@@ -217,7 +217,7 @@ const About = () => {
           Make it to the top, and you&apos;ll earn a spot among India&apos;s
           best makers!
         </BlinkText>
-        <Tiltbutton />
+        <Tiltbutton title="register" />
       </div>
     </div>
   );
