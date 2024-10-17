@@ -74,7 +74,7 @@ const Qa = () => {
     },
   ];
   return (
-    <div className="p-8  bg-bg2">
+    <div id="faqs" className="p-8  bg-bg2">
       <div className="md:px-32 ">
         <BlinkText>
           <h1 className="title text-black ">Still Have Questions?</h1>

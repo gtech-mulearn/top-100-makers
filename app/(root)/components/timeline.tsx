@@ -7,7 +7,10 @@ import Tiltbutton from "./tiltbutton";
 
 const Timeline = () => {
   return (
-    <div className="bg-bg4 p-12 text-black flex flex-col gap-5 justify-center items-center md:min-h-screen relative md:pb-64">
+    <div
+      id="about"
+      className="bg-bg4 p-12 text-black flex flex-col gap-5 justify-center items-center md:min-h-screen relative md:pb-64"
+    >
       <BlinkText>
         <h1 className="title text-center">What’s the Game Plan?</h1>
       </BlinkText>

@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap max-lg:flex-col">
+    <footer id="contact" className="flex flex-wrap max-lg:flex-col">
       <div className="flex w-full  lg:w-1/2">
         {[...Array(3)].map((_, index) => (
           <Image
@@ -25,18 +26,35 @@ const Footer = () => {
             SEE US ON
           </p>
           <div className="flex space-x-4 text-gray-600 text-xl md:text-3xl">
-            <FaFacebookF className="hover:text-gray-800" />
-            <FaInstagram className="hover:text-gray-800" />
-            <FaDiscord className="hover:text-gray-800" />
-            <FaYoutube className="hover:text-gray-800" />
-            <BsTwitterX className="hover:text-gray-800" />
+            <Link target="_blank" rel="noopener noreferrer" href={""}>
+              <FaFacebookF className="hover:text-gray-800" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://www.instagram.com/mulearn.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              }
+            >
+              <FaInstagram className="hover:text-gray-800" />
+            </Link>
+            <Link target="_blank" rel="noopener noreferrer" href={""}>
+              <FaDiscord className="hover:text-gray-800" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"https://youtube.com/@mulearn?si=mMpMm0TV0YbHX_rf"}
+            >
+              <FaYoutube className="hover:text-gray-800" />
+            </Link>
+            <Link target="_blank" rel="noopener noreferrer" href={""}>
+              <BsTwitterX className="hover:text-gray-800" />
+            </Link>
           </div>
         </div>
         <div className="flex items-center bg-bg4 h-1/2 justify-between p-8 md:px-12">
-          <a
-            href="/terms"
-            className="text-gray-600 hover:text-gray-800 font-nats"
-          >
+          <a className="text-gray-600 hover:text-gray-800 font-nats">
             TERMS OF USE AND PRIVACY POLICY
           </a>
           <a

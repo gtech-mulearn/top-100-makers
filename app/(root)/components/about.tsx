@@ -27,7 +27,10 @@ const About = () => {
     };
   }, []);
   return (
-    <div className="flex justify-start items-center flex-col p-8 text-center gap-14 lg:min-h-[140vh] relative">
+    <div
+      id="prize"
+      className="flex justify-start items-center flex-col p-8 text-center gap-14 lg:min-h-[140vh] relative"
+    >
       <BlinkText>
         <h1 className="title ">
           What’s in it for You? Prizes Worth <br /> ₹10,00,000!
