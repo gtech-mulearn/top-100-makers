@@ -45,7 +45,7 @@ const Selection = () => {
         <p className="mt-8 font-nats text-3xl">
           We’re looking for creators who excel in:
         </p>
-        <div className="flex justify-center items-center mt-32 mb-20 max-lg:flex-col relative z-[1]">
+        <div className="flex justify-center items-center mt-32 mb-20 max-lg:flex-col relative z-[1] max-md:gap-8">
           {cardData.map((item, i) => (
             <React.Fragment key={i}>
               {isMobile ? (
