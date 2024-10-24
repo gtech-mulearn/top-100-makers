@@ -13,7 +13,7 @@ const Footer = () => {
             key={index}
             src={`/footer/footer_logo${index + 1}.webp`}
             alt="partener image"
-            className="w-[100vw] "
+            className="w-[100%] max-sm:w-1/3"
             width={250}
             height={250}
             draggable={false}
