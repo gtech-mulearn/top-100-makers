@@ -72,10 +72,10 @@ const Terms = () => {
 
         {/* Body Text */}
         <p className="md:text-2xl text-lg font-nats text-[#191818] mb-2 md:mb-6">
-          Top 100 Makers (the "Site") is a platform that provides a community
-          for makers to collaborate, share projects, learn from each other, and
-          showcase their creativity. By using the site, you agree to the
-          following terms and conditions:
+          Top 100 Makers (the &quot;Site&quot;) is a platform that provides a
+          community for makers to collaborate, share projects, learn from each
+          other, and showcase their creativity. By using the site, you agree to
+          the following terms and conditions:
         </p>
         <div className="md:text-2xl text-lg font-nats text-[#191818] mb-2 md:mb-6">
           {termsData.map((term) => (
